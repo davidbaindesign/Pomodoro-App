@@ -1,0 +1,104 @@
+html,
+body {
+  background: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 280px;
+  width: 280px;
+  box-shadow: 0 0 20px 10px #33d;
+  color: #33d;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+
+#timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 140px;
+  width: 200px;
+  text-align: center;
+  color: #55f;
+  line-height: .0;
+  font-size: 140%;
+  cursor: pointer;
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#break {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% - 250px), -50%);
+  height: 80px;
+  width: 101px;
+  color: #f80;
+  text-align: center;
+  line-height: .5;
+}
+
+#break a {
+  color: #f80;
+  text-decoration: none;
+}
+
+#session {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 250px), -50%);
+  height: 80px;
+  width: 101px;
+  color: #55f;
+  text-align: center;
+  line-height: .5;
+}
+
+#session a {
+  color: #55f;
+  text-decoration: none;
+}
+
+#sessionMins {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+#breakMins {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+
+@media screen and (max-width: 630px) {
+  #session {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 250px));
+  }
+  #break {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 250px));
+  }
+}
+
+}
